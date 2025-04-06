@@ -4,11 +4,12 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        Hora hr = new Hora(0, 0, 0);
 
-        hr.horas = Integer.parseInt(JOptionPane.showInputDialog("Digite a hora: "));
-        hr.minutos = Integer.parseInt(JOptionPane.showInputDialog("Digite os minutos: "));
-        hr.segundos = Integer.parseInt(JOptionPane.showInputDialog("Digite os segundos: "));
+        int horas = Integer.parseInt(JOptionPane.showInputDialog("Digite a hora: "));
+        int minutos = Integer.parseInt(JOptionPane.showInputDialog("Digite os minutos: "));
+        int segundos = Integer.parseInt(JOptionPane.showInputDialog("Digite os segundos: "));
+
+        Hora hr = new Hora(horas, minutos, segundos);
 
         JOptionPane.showMessageDialog(null, hr.imprimirHorarioFormatado());
     }

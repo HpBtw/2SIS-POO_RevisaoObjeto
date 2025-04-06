@@ -12,7 +12,7 @@ public class Hora {
     }
 
     public int validarHora(int valido) {
-        if (valido < 0 || valido > 24) {
+        if (valido < 0 || valido > 23) {
             return 0;
         }
         return valido;
