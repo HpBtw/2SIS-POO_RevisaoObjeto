@@ -1,10 +1,10 @@
-package domain;
+package ex7.domain;
 
 public class Bola {
     private String cor;
     private double raio;
 
-    public Bola(String cor, double ratio) {
+    public Bola(String cor, double raio) {
         this.cor = cor;
         this.raio = raio;
     }

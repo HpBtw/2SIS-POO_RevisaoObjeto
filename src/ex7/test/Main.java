@@ -1,6 +1,6 @@
-package test;
+package ex7.test;
 
-import domain.Bola;
+import ex7.domain.Bola;
 
 public class Main {
     public static void main(String[] args) {
