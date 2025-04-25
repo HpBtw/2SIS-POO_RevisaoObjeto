@@ -23,7 +23,7 @@ public class Triangulo {
     }
 
     public double calcLambda() {
-        return (this.a * this.a + this.b * this.b - this.c * this.c) / 2 * this.a * this.b;
+        return (this.a * this.a + this.b * this.b - this.c * this.c) / (2 * this.a * this.b);
     }
 
     public double calcX() {
@@ -31,6 +31,6 @@ public class Triangulo {
     }
 
     public double calcY() {
-        return (this.a / 3) * Math.sqrt(1 - calcLambda() * calcLambda());
+        return (this.a / 3) * Math.sqrt(1 - Math.pow(calcLambda(), 2));
     }
 }
